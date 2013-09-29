@@ -81,12 +81,12 @@ int main(void)
             {
             //O jogo vai ser iniciado
             case 1:
-                al_draw_textf(fonte, al_map_rgb(0, 0, 255), LARGURA_TELA / 2, 220, ALLEGRO_ALIGN_CENTRE, "Iniciar Jogo");
+                al_draw_textf(fonte, al_map_rgb(0, 255, 0), LARGURA_TELA / 2, 220, ALLEGRO_ALIGN_CENTRE, "Iniciar Jogo");
                 break;
 
             //O jogo fecha se o usuario escolher e aperta enter, sair do jogo
             case 2:
-                al_draw_text(fonte, al_map_rgb(0, 0, 255), LARGURA_TELA / 2, 400, ALLEGRO_ALIGN_CENTRE, "Sair");     
+                al_draw_text(fonte, al_map_rgb(255, 0, 0), LARGURA_TELA / 2, 400, ALLEGRO_ALIGN_CENTRE, "Sair");     
                 break;
             case 3:
                 
@@ -96,7 +96,7 @@ int main(void)
                 break;
             }
             if(tecla == 5){
-                al_destroy_display(janela);
+                return 0;
             }
             tecla = 0;
         }
