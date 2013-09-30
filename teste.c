@@ -95,7 +95,7 @@ int main(void)
                 
                 break;
             }
-            if(tecla == 5){
+            if(tecla ==  al_draw_textf(fonte, al_map_rgb(0, 255, 0), LARGURA_TELA / 2, 220, ALLEGRO_ALIGN_CENTRE, "Iniciar Jogo")){
                 return 0;
             }
             tecla = 0;
